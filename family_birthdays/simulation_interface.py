@@ -134,7 +134,7 @@ class SimulationInterface():
         m = self.inputs["m"]
         b = self.inputs["b"]
         # Run the delegated simulation
-        outputs = execute_simulation(x_min, x_max, N_points, m, b)
+        outputs = execute_simulation(self.inputs)
         # Store simulation
         self.outputs = outputs
         return
