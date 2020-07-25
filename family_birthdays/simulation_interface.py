@@ -128,6 +128,7 @@ class SimulationInterface():
         """Conditionally imports the numpy library.
         """
         # Run the delegated simulation
+        from .simulation_code import execute_simulation
         outputs = execute_simulation(self.inputs)
         # Store simulation
         self.outputs = outputs
