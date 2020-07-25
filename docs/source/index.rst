@@ -3,15 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to the documentation!
+¡Bienvenido a la documentación!
 ======================================================
 
-**family_birthdays** is a package encapsulates a methodology and tools for reproducible simulations. 
-The main idea is to use python and/or jupyter notebooks to provide a lightweight and for-dummies easy 
-"Simulation as a Service". 
-The framework puts emphasis on simplicity: for the client to install and use, 
-for the programmer to distribute and update, and for everyone to store and reproduce results. 
-The framework can be personalized and extended for a specific simulation need.
+La librería **family_birthdays** es un packet que permite ilustrar el funcionamiento de una código python en la nube, 
+particularmente en jupyter notebooks.
+
 
 .. toctree::
    :maxdepth: 1
@@ -22,5 +19,3 @@ The framework can be personalized and extended for a specific simulation need.
    example
    howto
    class
-   acknowledgements
-   links

@@ -1,69 +1,33 @@
 Examples
 =============
 
-Example in Google colab
+Ejemplo en mybinder
+*********************
+Acá hay un ejemplo ejecutable usando `MyBinder <https://mybinder.org/v2/gh/sebastiandres/family_birthdays/master?filepath=tests%2Fjupyter_test.ipynb>`_.
+No requiere una cuenta.
+
+Ejemplo en Google colab
 ************************
-Here is an executable example using `Google Colab <https://colab.research.google.com/drive/1mfSZQOhe7qq1C-YpfX5dDpSedXGVjz4e?usp=sharing>`_. 
-Requires a google account (but it's worth it :).
+Acá hay un ejemplo en `Google Colab <https://colab.research.google.com/drive/1XnruLOcG39i4SrQSSy9rnHIQ3RsQJdJr?usp=sharing>`_. 
+Requiere tener una cuenta de gmail (google).
 
-Example in mybinder
+
+Ejemplo en python
 *********************
-
-Here is an executable example using `MyBinder <https://mybinder.org/v2/gh/sebastiandres/family_birthdays/master?filepath=tests%2Fjupyter_test.ipynb>`_.
-Does not requires any account, but it will not store results.
-
-Code example
-*********************
+Para ejecutar el código necesitas haber instalado la librería.
 To run it, you need to install the library. 
 
-To run and save a simulation:
-
 .. code-block:: python
 
     from family_birthdays import SimulationInterface
 
-    inputs = {
-            "x_min":0, 
-            "x_max":10, 
-            "N_points":12,
-            "m":3.0,
-            "b":-2.0
+    birthdates = {"Captain America":"04-07-1918",
+                    "Ironman":"29-05-1970",
+                    "Spiderman":"10-08-2001",
+                    "Batman":"17-04-1915",
+                    "Hulk":"18-12-1969",
     }
-    plot_options = {
-            "xlabel":"x [x_units]",
-            "ylabel":"y [y_units]",
-            "title":"My title",
-            "data_x":[ 0.1, 2.1,  3.9,  6.1,  7.9,  9.9],  
-            "data_y":[-2.8, 3.6, 10.7, 13.6, 22.8, 27.1],  # -2 + 3*x + error
-            "data_kwargs": {'label':'exp', 'color':'red', 
-                            'marker':'s', 'markersize':6, 
-                            'linestyle':'none','linewidth':2, 
-            },
-            "sim_kwargs": {'label':'sim', 'color':'black', 
-                            'marker':'o', 'markersize':6, 
-                            'linestyle':'dashed','linewidth':2, 
-            },
-    }
-    filepath = "/test.sim"
-    print("Sim file:", filepath)
 
     SI = SimulationInterface()
-    SI.new(inputs, plot_options)
+    SI.new({"birthdates":birthdates})
     SI.simulate()
-    SI.save(filepath)
-    SI.status()
-    del SI
-    
-To load a simulation and plot the results:
-
-.. code-block:: python
-
-    from family_birthdays import SimulationInterface
-    SI_2 = SimulationInterface()
-    SI_2.load(filepath)
-    SI_2.plot(filename="test.png")
-    SI_2.status()
-
-As you can see, all you need is to define the inputs and plot options, and run the simulation. 
-Libraries and outputs are silently handled. 
-Saving, plotting or exporting the results is trivially easy for the user.

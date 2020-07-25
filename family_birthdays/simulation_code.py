@@ -13,7 +13,7 @@ def execute_simulation(inputs, n=3):
     computed_days_and_ages = []        
     for who, borndate_str in inputs["birthdates"].items():
         day, month, year = borndate_str.split("-")
-        borndate = date(int(year), int(month), int(day))
+        borndate = date(int(year), int(month), int(day))        
         d2b = calculate_days_to_birthday(today, borndate)
         age = calculate_age(today, borndate)
         computed_days_and_ages.append([who, d2b, age])

@@ -2,7 +2,7 @@
 SimulationInterface class
 ==================================
 
-This is the proposed class and its methods, that you should personalize to your needs. 
+Esta es la documentación de la librería.
 
 .. autoclass:: simulation_interface.SimulationInterface
     :members:
