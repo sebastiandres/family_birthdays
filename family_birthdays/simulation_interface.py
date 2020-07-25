@@ -127,12 +127,6 @@ class SimulationInterface():
     def simulate(self):
         """Conditionally imports the numpy library.
         """
-        # Unpack required values
-        x_min = self.inputs["x_min"]
-        x_max = self.inputs["x_max"]
-        N_points = self.inputs["N_points"]
-        m = self.inputs["m"]
-        b = self.inputs["b"]
         # Run the delegated simulation
         outputs = execute_simulation(self.inputs)
         # Store simulation

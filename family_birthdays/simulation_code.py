@@ -1,7 +1,7 @@
 from datetime import date
 from operator import itemgetter
 
-def execute_simulation(inputs, n=10):
+def execute_simulation(inputs, n=3):
     """Function that returns the n closest birthdays.
     
     :param inputs: The dictionary with names and birthdates.
