@@ -1,9 +1,7 @@
-Generic Simulation Library
-===========================
+Cumpleaños Familiares - Family Birthdays
+=========================================
 
-``family_birthdays`` is a package encapsulates a methodology and tools for reproducible simulations. 
-The main idea is to use python and/or jupyter notebooks to provide a lightweight and for-dummies easy 
-"Simulation as a Service". 
+``family_birthdays`` is an example of the framework GeneralSimulationLibrary, that allows to PaaS, that is, to use Python as a Service.
 
 The framework puts an emphasis on simplicity: 
 
@@ -19,7 +17,7 @@ The framework can be personalized and extended for a specific simulation need.
 Test it
 --------
 
-* In `Google Colab <https://colab.research.google.com/drive/1mfSZQOhe7qq1C-YpfX5dDpSedXGVjz4e?usp=sharing>`_.
+* In `Google Colab <https://colab.research.google.com/drive/1XnruLOcG39i4SrQSSy9rnHIQ3RsQJdJr?usp=sharing`_.
 
 * In `MyBinder <https://mybinder.org/v2/gh/sebastiandres/family_birthdays/master?filepath=tests%2Fjupyter_test.ipynb>`_.
 
@@ -27,10 +25,6 @@ Test it
 Need more info?
 -----------------------------------
 
-`Read the docs! <https://family_birthdays.readthedocs.io/en/latest/>`_.
+`Read the family_birthday docs! <https://family_birthdays.readthedocs.io/en/latest/>`_.
 
-
-Where has been used?
-----------------------
-
-See `pypsdier <https://github.com/sebastiandres/pypsdier>`_ library for an example of a real numerical implementation using this framework.
+`Read the GenericSimulationLibrary docs! <https://genericSimulationlibrary.readthedocs.io/en/latest/>`_.
