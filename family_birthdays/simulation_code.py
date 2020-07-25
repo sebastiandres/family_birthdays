@@ -12,8 +12,8 @@ def execute_simulation(inputs, n=3):
     today = date.today()
     computed_days_and_ages = []        
     for who, borndate_str in inputs["birthdates"].items():
-        isoformat_str = "-".join(borndate_str.split("-")[::-1])
-        borndate = date.fromisoformat(isoformat_str)
+        day, month, year = borndate_str.split("-")
+        borndate = date(int(year), int(month), int(day))
         d2b = calculate_days_to_birthday(today, borndate)
         age = calculate_age(today, borndate)
         computed_days_and_ages.append([who, d2b, age])
